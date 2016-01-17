@@ -3,7 +3,7 @@
 @import 'foundation';
 @import 'motion-ui';
 @include foundation-global-styles;
-@include foundation-grid;
+@include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -39,12 +39,20 @@
 @include foundation-top-bar;
 @include motion-ui-transitions;
 @include motion-ui-animations;
-
 .off-canvas {
     .menu-subtitle {
         background-color: $secondary-blue;
     }
     a {
         color: $white;
+    }
+}
+
+.news-item {
+    margin: 10px 0 0 0;
+    div {
+        padding: 5px 10px 0 10px;
+        // text-align: justify;
+        background-color: $white;
     }
 }
