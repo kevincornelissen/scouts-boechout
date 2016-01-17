@@ -1,77 +1,110 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class='no-js' lang='en'>
 
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv='x-ua-compatible' content='ie=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Scouts Boechout</title>
-    <link rel='stylesheet' href='css/bootstrap.min.css'>
-    <link rel='stylesheet' href='css/style.css'>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js'></script>
-      <script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'></script>
-    <![endif]-->
+    <link rel='stylesheet' href='css/app.css'>
 </head>
 
 <body>
-    <nav class='navbar navbar-default'>
-        <div class='navbar-header'>
-            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#links-navigation' aria-expanded='false'>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-            </button>
-            <h1><a class="navbar-brand" href="#">Scouts Boechout</a></h1>
-        </div>
-        <div class='navbar-collapse collapse' id='links-navigation'>
-            <ul class='nav navbar-nav'>
-                <li><a href='#'>Home</a></li>
-                <li class='dropdown'>
-                    <a href='#' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Algemeen <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Over Scouts Boechout</a></li>
-                        <li><a href="#">Jaarthema</a></li>
-                        <li><a href="#">Groepsleiding</a></li>
-                        <li><a href="#">Oud Scouts</a></li>
-                        <li><a href="#">VZW</a></li>
-                    </ul>
-                </li>
-                <li class='dropdown'>
-                    <a href='#' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Praktisch <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Inschrijven</a></li>
-                        <li><a href="#">Locatie</a></li>
-                        <li><a href="#">Uniform</a></li>
-                        <li><a href="#">Verhuur</a></li>
-                    </ul>
-                </li>
-                <li class='dropdown'>
-                    <a href='#' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Takken <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Kapoenen</a></li>
-                        <li><a href="#">Welpen</a></li>
-                        <li><a href="#">Jong Verkenners</a></li>
-                        <li><a href="#">Verkenners</a></li>
-                        <li><a href="#">Jins</a></li>
-                    </ul>
-                </li>
-                <li><a href='#'>Foto's</a></li>
-                <li><a href='#'>Paalsteek</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container-fluid ">
-        <div class="row">
-            <div class="col-xs-12 hero">
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+                <ul class="menu vertical">
+                    <li><a href='#'>Home</a></li>
+                    <li><a class='menu-subtitle' href="#">Algemeen</a>
+                        <ul class='nested vertical menu'>
+                            <li><a href="#">Over Scouts Boechout</a></li>
+                            <li><a href="#">Jaarthema</a></li>
+                            <li><a href="#">Groepsleiding</a></li>
+                            <li><a href="#">Oud Scouts</a></li>
+                            <li><a href="#">VZW</a></li>
+                        </ul>
+                    </li>
+                    <li><a class='menu-subtitle' href="#">Praktisch</a>
+                        <ul class="nested vertical menu">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Inschrijven</a></li>
+                            <li><a href="#">Locatie</a></li>
+                            <li><a href="#">Uniform</a></li>
+                            <li><a href="#">Verhuur</a></li>
+                        </ul>
+                    </li>
+                    <li><a class='menu-subtitle' href="#">Takken</a>
+                        <ul class="nested vertical menu">
+                            <li><a href="#">Kapoenen</a></li>
+                            <li><a href="#">Welpen</a></li>
+                            <li><a href="#">Jong Verkenners</a></li>
+                            <li><a href="#">Verkenners</a></li>
+                            <li><a href="#">Jins</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Foto's</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="off-canvas-content" data-off-canvas-content>
+                <div class="title-bar">
+                    <div class="title-bar-left">
+                        <button class="menu-icon" type="button" data-open="offCanvas"></button>
+                        <span class="title-bar-title">Scouts Boechout</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns news-item">
+                        <img src="img/spaghetti-bolognese.jpg" alt="spaghetti foto">
+                        <div>
+                            <h3>Spaghettiavond Jins</h3>
+                            <p>Hebt u ‘s avonds altijd honger? Ja! Kookt u graag? Neen! </p><p>Voilà, de beslissing is gemaakt. Op zaterdag, 20 februari 2016 koken de Jins van Boechout voor u! </p><p>Prezzo? Kleine spaghetti €7 en grote (veggie) spaghetti €9,5 Qualcos’altro? Een kinderijsje, rijstpap of chocomousse voor €2 </p><p>A che ora? Shift 1: 17u-19u en shift 2: 19u30-22u </p><p>Dove? Het gidsenlokaal op de parking van Delhaize...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns news-item">
+                        <img src="img/spaghetti-bolognese.jpg" alt="spaghetti foto">
+                        <div>
+                            <h3>Spaghettiavond Jins</h3>
+                            <p>Hello from the left side Hello from the left side Hello from the left side Hello from the left side Hello from the left side Hello from the left side Hello from the left side </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns news-item">
+                        <img src="img/spaghetti-bolognese.jpg" alt="spaghetti foto">
+                        <div>
+                            <h3>Spaghettiavond Jins</h3>
+                            <p>Hello from the left side Hello from the left side Hello from the left side Hello from the left side Hello from the left side Hello from the left side Hello from the left side </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns news-item">
+                        <img src="img/spaghetti-bolognese.jpg" alt="spaghetti foto">
+                        <div>
+                            <h3>Spaghettiavond Jins</h3>
+                            <p>Hello from the left side Hello from the left side Hello from the left side Hello from the left side Hello from the left side Hello from the left side Hello from the left side </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns news-item">
+                        <img src="img/spaghetti-bolognese.jpg" alt="spaghetti foto">
+                        <div>
+                            <h3>Spaghettiavond Jins</h3>
+                            <p>Hello from the left side Hello from the left side Hello from the left side Hello from the left side Hello from the left side Hello from the left side Hello from the left side </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
-    <script src='js/bootstrap.min.js'></script>
+    <script src='bower_components/jquery/dist/jquery.js'></script>
+    <script src='bower_components/what-input/what-input.js'></script>
+    <script src='bower_components/foundation-sites/dist/foundation.js'></script>
+    <script src='js/app.js'></script>
 </body>
 
 </html>
