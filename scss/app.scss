@@ -39,6 +39,32 @@
 @include foundation-top-bar;
 @include motion-ui-transitions;
 @include motion-ui-animations;
+// general
+// -------
+p {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.button {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.button-red {
+    background-color: $primary-red;
+    &:hover {
+        background-color: $secondary-red;
+    }
+}
+
+// slide-out menu
+// --------------
 .off-canvas {
     .menu-subtitle {
         background-color: $secondary-blue;
@@ -53,24 +79,21 @@
     min-height: 800px;
 }
 
-.title-bar-left {
-    float: none;
-    text-align: center;
-    .menu-icon {
-        margin: 0.4rem 0 0.4rem 0;
-        float: left;
-    }
-    .title-bar-title {
-        text-transform: uppercase;
-    }
+.menu-icon {
+    margin: 1rem 0 2rem 0;
 }
 
+// hero
+// ----
 .hero {
-    background-image: url('../img/hero-mobile.png');
+    background: url('../img/hero-mobile.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
     min-height: 400px;
     width: 100%;
-    text-align: center;
     h2 {
+        text-align: center;
         color: $white;
         font-size: 1.6rem;
         font-weight: 700;
@@ -78,37 +101,27 @@
         padding-bottom: 0.5rem;
     }
     p {
+        text-align: center;
         color: $white;
         font-family: 'Roboto Slab';
     }
     .button {
-        background-color: $primary-red;
         margin-top: 4rem;
-        text-transform: uppercase;
-        font-weight: 700;
-    }
-    .button:hover {
-        background-color: $secondary-red;
     }
 }
 
-.news-row {
+// post tile
+// ---------
+.post-row {
     margin: 1rem 0.4rem 0.4rem 0.4rem;
     background-color: $white;
-    .news-image {
+    .post-image {
         padding: 0px;
-    }
-    h3 {
-        margin-top: 0.5rem;
-        text-transform: uppercase;
-        font-weight: 700;
-    }
-    .button {
-        text-transform: uppercase;
-        font-weight: 700;
     }
 }
 
+// footer
+// ------
 .footer {
     margin-top: 2rem;
     background-color: $black;
@@ -124,8 +137,25 @@
     a {
         text-decoration: underline;
         color: $primary-red;
+        &:hover {
+            color: $secondary-red;
+        }
     }
-    a:hover {
-        color: $secondary-red;
+}
+
+// post
+// ----
+.post-hero {
+    .small-12 {
+        height: 150px;
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/spaghetti.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        margin-bottom: 1.5rem;
+        h3 {
+            margin-top: 1.5rem;
+            color: $white;
+        }
     }
 }
