@@ -40,6 +40,8 @@
 //  35. Top Bar
 
 @import 'util/util';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 
 // 1. Global
 // ---------
@@ -47,32 +49,33 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$primary-color: #2199e8;
-$secondary-color: #777;
+$primary-color: #3766c7;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
-$light-gray: #e6e6e6;
+$light-gray: #f2f2f2;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
+$black: #232323;
 $white: #fefefe;
 $body-background: $light-gray;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Open Sans', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
-$global-weight-normal: normal;
-$global-weight-bold: bold;
+$global-weight-normal: 400;
+$global-weight-bold: 700;
 $global-radius: 0;
 $global-text-direction: ltr;
 
 // 1.1 Custom Colors
 // -----------------
 
-$primary-blue: #1958a6;
-$secondary-blue: #164e94;
+$primary-blue: #3766c7;
+$secondary-blue: #3e72de;
+$primary-red: #ef4135;
+$secondary-red: #f36d64;
 
 // 2. Breakpoints
 // --------------
@@ -236,7 +239,7 @@ $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-background-hover: $secondary-blue;
 $button-color: #fff;
 $button-color-alt: #000;
 $button-radius: $global-radius;
