@@ -48,11 +48,84 @@
     }
 }
 
-.news-item {
-    margin: 10px 0 0 0;
-    div {
-        padding: 5px 10px 0 10px;
-        // text-align: justify;
-        background-color: $white;
+.off-canvas-content {
+    box-shadow: none;
+    min-height: 800px;
+}
+
+.title-bar-left {
+    float: none;
+    text-align: center;
+    .menu-icon {
+        margin: 0.4rem 0 0.4rem 0;
+        float: left;
+    }
+    .title-bar-title {
+        text-transform: uppercase;
+    }
+}
+
+.hero {
+    background-image: url('../img/hero-mobile.png');
+    min-height: 400px;
+    width: 100%;
+    text-align: center;
+    h2 {
+        color: $white;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding-top: 6rem;
+        padding-bottom: 0.5rem;
+    }
+    p {
+        color: $white;
+        font-family: 'Roboto Slab';
+    }
+    .button {
+        background-color: $primary-red;
+        margin-top: 4rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .button:hover {
+        background-color: $secondary-red;
+    }
+}
+
+.news-row {
+    margin: 1rem 0.4rem 0.4rem 0.4rem;
+    background-color: $white;
+    .news-image {
+        padding: 0px;
+    }
+    h3 {
+        margin-top: 0.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .button {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.footer {
+    margin-top: 2rem;
+    background-color: $black;
+    p {
+        font-size: 0.8rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        color: $white;
+    }
+    a{
+        text-decoration: underline;
+        color: $primary-red;
+    }
+    a:hover{
+        color:$secondary-red;
     }
 }
