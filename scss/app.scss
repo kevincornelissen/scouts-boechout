@@ -74,7 +74,7 @@
         color: $white;
         font-size: 1.6rem;
         font-weight: 700;
-        padding-top: 6rem;
+        padding-top: 3srem;
         padding-bottom: 0.5rem;
     }
     p {
@@ -121,11 +121,11 @@
         text-align: center;
         color: $white;
     }
-    a{
+    a {
         text-decoration: underline;
         color: $primary-red;
     }
-    a:hover{
-        color:$secondary-red;
+    a:hover {
+        color: $secondary-red;
     }
 }
