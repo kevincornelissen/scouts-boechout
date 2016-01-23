@@ -62,9 +62,10 @@ h3 {
 
 .button-red {
     background-color: $primary-red;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         background-color: $secondary-red;
-    }    
+    }
 }
 
 // slide-out menu
@@ -91,6 +92,14 @@ h3 {
 // ----
 .hero {
     background: url('../img/hero-mobile.png');
+}
+
+.hero-about {
+    background: url('../img/hero-about-mobile.png');
+}
+
+.hero,
+.hero-about {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -101,7 +110,7 @@ h3 {
         color: $white;
         font-size: 1.6rem;
         font-weight: 700;
-        padding-top: 3srem;
+        padding-top: 3rem;
         padding-bottom: 0.5rem;
     }
     p {
@@ -166,4 +175,21 @@ h3 {
 
 .post {
     padding-bottom: 3rem;
+}
+
+// about
+// -----
+.about-content {
+    text-align: center;
+    .about-quote {
+        margin: 4rem 0 2rem 0;
+        font-weight: 600;
+        font-style: italic;
+    }
+    div:not(.about-quote) {
+        padding-bottom: 4rem;
+        img {
+            margin-bottom: 1rem;
+        }
+    }
 }
