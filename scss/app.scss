@@ -62,9 +62,9 @@ h3 {
 
 .button-red {
     background-color: $primary-red;
-    &:hover {
+    &:hover, &:focus {
         background-color: $secondary-red;
-    }
+    }    
 }
 
 // slide-out menu
