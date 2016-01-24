@@ -85,7 +85,17 @@ h3 {
 }
 
 .menu-icon {
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 1rem 0;
+    width:1.6rem;
+    padding-bottom: 30px;
+    &::after {
+        height: 3px;
+        box-shadow: 0 10px 0 $titlebar-icon-color, 0 20px 0 $titlebar-icon-color;   
+    }    
+    &:hover::after {
+        height: 3px;
+        box-shadow: 0 10px 0 $titlebar-icon-color-hover, 0 20px 0 $titlebar-icon-color-hover;   
+    }
 }
 
 // hero
