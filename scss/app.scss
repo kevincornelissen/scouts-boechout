@@ -86,15 +86,15 @@ h3 {
 
 .menu-icon {
     margin: 1rem 0 1rem 0;
-    width:1.6rem;
+    width: 1.6rem;
     padding-bottom: 30px;
     &::after {
         height: 3px;
-        box-shadow: 0 10px 0 $titlebar-icon-color, 0 20px 0 $titlebar-icon-color;   
-    }    
+        box-shadow: 0 10px 0 $titlebar-icon-color, 0 20px 0 $titlebar-icon-color;
+    }
     &:hover::after {
         height: 3px;
-        box-shadow: 0 10px 0 $titlebar-icon-color-hover, 0 20px 0 $titlebar-icon-color-hover;   
+        box-shadow: 0 10px 0 $titlebar-icon-color-hover, 0 20px 0 $titlebar-icon-color-hover;
     }
 }
 
@@ -102,18 +102,27 @@ h3 {
 // ----
 .hero {
     background: url('../img/hero-mobile.png');
+    min-height: 400px;
+    background-position: top center;
 }
 
 .hero-about {
     background: url('../img/hero-about-mobile.png');
+    min-height: 400px;
+    background-position: top center;
+}
+
+.hero-jaarthema {
+    background: url('../img/hero-jaarthema.jpg');
+    min-height: 140px;
+    background-position: bottom center;
 }
 
 .hero,
-.hero-about {
+.hero-about,
+.hero-jaarthema {
     background-repeat: no-repeat;
-    background-position: top center;
     background-size: cover;
-    min-height: 400px;
     width: 100%;
     h2 {
         text-align: center;
@@ -201,5 +210,19 @@ h3 {
         img {
             margin-bottom: 1rem;
         }
+    }
+}
+
+// jaarthema
+// ---------
+.jaarthema-content {
+    text-align: center;
+    h3 {
+        font-style: italic;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+    p {
+        margin-bottom: 5rem;
     }
 }
