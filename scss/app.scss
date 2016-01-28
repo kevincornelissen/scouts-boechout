@@ -1,0 +1,228 @@
+@charset 'utf-8';
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+@include foundation-global-styles;
+@include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-menu;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include motion-ui-transitions;
+@include motion-ui-animations;
+// general
+// -------
+p {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.gray-bg {
+    background-color: $light-gray;
+}
+
+.button {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.button-red {
+    background-color: $primary-red;
+    &:hover,
+    &:focus {
+        background-color: $secondary-red;
+    }
+}
+
+// slide-out menu
+// --------------
+.off-canvas {
+    .menu-subtitle {
+        background-color: $secondary-blue;
+    }
+    a {
+        color: $white;
+    }
+}
+
+.off-canvas-content {
+    box-shadow: none;
+    min-height: 800px;
+}
+
+.menu-icon {
+    margin: 1rem 0 1rem 0;
+    width: 1.6rem;
+    padding-bottom: 30px;
+    &::after {
+        height: 3px;
+        box-shadow: 0 10px 0 $titlebar-icon-color, 0 20px 0 $titlebar-icon-color;
+    }
+    &:hover::after {
+        height: 3px;
+        box-shadow: 0 10px 0 $titlebar-icon-color-hover, 0 20px 0 $titlebar-icon-color-hover;
+    }
+}
+
+// hero
+// ----
+.hero {
+    background: url('../img/hero-mobile.png');
+    min-height: 400px;
+    background-position: top center;
+}
+
+.hero-about {
+    background: url('../img/hero-about-mobile.png');
+    min-height: 400px;
+    background-position: top center;
+}
+
+.hero-jaarthema {
+    background: url('../img/hero-jaarthema.jpg');
+    min-height: 140px;
+    background-position: bottom center;
+}
+
+.hero,
+.hero-about,
+.hero-jaarthema {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    h2 {
+        text-align: center;
+        color: $white;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding-top: 3rem;
+        padding-bottom: 0.5rem;
+    }
+    p {
+        text-align: center;
+        color: $white;
+        font-family: 'Roboto Slab';
+    }
+    .button {
+        margin-top: 4rem;
+    }
+}
+
+// post tile
+// ---------
+.post-row {
+    margin: 1rem 0.4rem 0.4rem 0.4rem;
+    background-color: $white;
+    .post-image {
+        padding: 0px;
+    }
+}
+
+// footer
+// ------
+.footer {
+    margin-top: 2rem;
+    background-color: $black;
+    p {
+        font-size: 0.8rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        color: $white;
+    }
+    a {
+        text-decoration: underline;
+        color: $primary-red;
+        &:hover {
+            color: $secondary-red;
+        }
+    }
+}
+
+// post
+// ----
+.post-hero {
+    .small-12 {
+        height: 150px;
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/spaghetti.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        margin-bottom: 1.5rem;
+        h3 {
+            margin-top: 1.5rem;
+            color: $white;
+        }
+    }
+}
+
+.post {
+    padding-bottom: 3rem;
+}
+
+// about
+// -----
+.about-content {
+    text-align: center;
+    .about-quote {
+        margin: 4rem 0 2rem 0;
+        font-weight: 600;
+        font-style: italic;
+    }
+    div:not(.about-quote) {
+        padding-bottom: 4rem;
+        img {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+// jaarthema
+// ---------
+.jaarthema-content {
+    text-align: center;
+    h3 {
+        font-style: italic;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+    p {
+        margin-bottom: 5rem;
+    }
+}
